@@ -1,0 +1,15 @@
+{
+  "hash": "3f915be0b93c77af0f7a02960cbbadc8",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"A propos\"\n---\n\nDernière mise à jour:\n\n\n::: {.cell}\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] \"2026-07-09 08:53:39 CEST\"\n```\n\n\n:::\n:::\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

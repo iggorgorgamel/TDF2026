@@ -47,3 +47,10 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+.Rprofile
+data/
+img/
+renv/
+report.html
+report_files/
