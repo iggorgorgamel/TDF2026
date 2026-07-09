@@ -7,6 +7,8 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - href: etappes.qmd
+        text: Etapes
       - about.qmd
 
 format:
