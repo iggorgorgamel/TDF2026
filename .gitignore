@@ -54,3 +54,5 @@ img/
 renv/
 report.html
 report_files/
+/.quarto/
+**/*.quarto_ipynb
