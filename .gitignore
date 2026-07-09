@@ -49,8 +49,6 @@ po/*~
 rsconnect/
 
 .Rprofile
-data/
-img/
 renv/
 report.html
 report_files/
