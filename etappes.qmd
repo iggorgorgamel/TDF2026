@@ -1,0 +1,356 @@
+---
+title: "Résultats par étapes"
+execute:
+  echo: false
+---
+
+```{r , echo = FALSE , include=FALSE}
+#| label: tbl-etappe1
+#| tbl-cap: Pronos pour la première étappe
+knitr::opts_chunk$set(warning = FALSE, message = FALSE)
+
+library(flextable) 
+library(officer)
+library(tidyverse)
+
+std_border = fp_border(color="black",width = 2)
+border2 = fp_border(color="black",width = 2)
+
+```
+
+<!-- ## Étape 21
+
+```{r , echo = FALSE }
+
+etappe21 <- read.csv("data/etappe21.csv",encoding = "UTF-8")
+names(etappe21)[1] <- c("Top 3")
+etappe21Table <- flextable(etappe21) %>%
+                  width(width=c(2.5,rep(4,7)), unit = "cm") %>%
+                  vline(j = 7, border = std_border) %>%
+                  hline(i = 3, border = border2)
+
+etappe21Table
+
+```
+
+## Étape 20
+
+```{r , echo = FALSE }
+
+etappe20 <- read.csv("data/etappe20.csv",encoding = "UTF-8")
+names(etappe20)[1] <- c("Top 3")
+etappe20Table <- flextable(etappe20) %>%
+                  width(width=c(2.5,rep(4,7)), unit = "cm") %>%
+                  vline(j = 7, border = std_border) %>%
+                  hline(i = 3, border = border2)
+
+etappe20Table
+
+```
+
+## Étape 19
+
+```{r , echo = FALSE }
+
+etappe19 <- read.csv("data/etappe19.csv",encoding = "UTF-8")
+names(etappe19)[1] <- c("Top 3")
+etappe19Table <- flextable(etappe19) %>%
+                  width(width=c(2.5,rep(4,7)), unit = "cm") %>%
+                  vline(j = 7, border = std_border) %>%
+                  hline(i = 3, border = border2)
+
+etappe19Table
+
+```
+
+## Étape 18
+
+```{r , echo = FALSE }
+
+etappe18 <- read.csv("data/etappe18.csv",encoding = "UTF-8")
+names(etappe18)[1] <- c("Top 3")
+etappe18Table <- flextable(etappe18) %>%
+                  width(width=c(2.5,rep(4,7)), unit = "cm") %>%
+                  vline(j = 7, border = std_border) %>%
+                  hline(i = 3, border = border2)
+
+etappe18Table
+
+```
+
+## Étape 17
+
+```{r , echo = FALSE }
+
+etappe17 <- read.csv("data/etappe17.csv",encoding = "UTF-8")
+names(etappe17)[1] <- c("Top 3")
+etappe17Table <- flextable(etappe17) %>%
+                  width(width=c(2.5,rep(4,7)), unit = "cm") %>%
+                  vline(j = 7, border = std_border) %>%
+                  hline(i = 3, border = border2)
+
+etappe17Table
+
+```
+
+## Étape 16
+
+```{r , echo = FALSE }
+
+etappe16 <- read.csv("data/etappe16.csv",encoding = "UTF-8")
+names(etappe16)[1] <- c("Top 3")
+etappe16Table <- flextable(etappe16) %>%
+                  width(width=c(2.5,rep(4,7)), unit = "cm") %>%
+                  vline(j = 7, border = std_border) %>%
+                  hline(i = 3, border = border2)
+
+etappe16Table
+
+```
+
+## Étape 15
+
+```{r , echo = FALSE }
+
+etappe15 <- read.csv("data/etappe15.csv",encoding = "UTF-8")
+names(etappe15)[1] <- c("Top 3")
+etappe15Table <- flextable(etappe15) %>%
+                  width(width=c(2.5,rep(4,7)), unit = "cm") %>%
+                  vline(j = 7, border = std_border) %>%
+                  hline(i = 3, border = border2)
+
+etappe15Table
+
+```
+
+## Étape 14
+
+```{r , echo = FALSE }
+
+etappe14 <- read.csv("data/etappe14.csv",encoding = "UTF-8")
+names(etappe14)[1] <- c("Top 3")
+etappe14Table <- flextable(etappe14) %>%
+                  width(width=c(2.5,rep(4,7)), unit = "cm") %>%
+                  vline(j = 7, border = std_border) %>%
+                  hline(i = 3, border = border2)
+
+etappe14Table
+
+```
+
+## Étape 13
+
+```{r , echo = FALSE }
+
+etappe13 <- read.csv("data/etappe13.csv",encoding = "UTF-8")
+names(etappe13)[1] <- c("Top 3")
+etappe13Table <- flextable(etappe13) %>%
+                  width(width=c(2.5,rep(4,7)), unit = "cm") %>%
+                  vline(j = 7, border = std_border) %>%
+                  hline(i = 3, border = border2)
+
+etappe13Table
+
+```
+
+## Étape 12
+
+```{r , echo = FALSE }
+
+etappe12 <- read.csv("data/etappe12.csv",encoding = "UTF-8")
+names(etappe12)[1] <- c("Top 3")
+etappe12Table <- flextable(etappe12) %>%
+                  width(width=c(2.5,rep(4,7)), unit = "cm") %>%
+                  vline(j = 7, border = std_border) %>%
+                  hline(i = 3, border = border2)
+
+etappe12Table
+
+```
+
+
+## Étape 11
+
+```{r , echo = FALSE }
+
+etappe11 <- read.csv("data/etappe11.csv",encoding = "UTF-8")
+names(etappe11)[1] <- c("Top 3")
+etappe11Table <- flextable(etappe11) %>%
+                  width(width=c(2.5,rep(4,7)), unit = "cm") %>%
+                  vline(j = 7, border = std_border) %>%
+                  hline(i = 3, border = border2)
+
+etappe11Table
+
+```
+
+## Étape 10
+
+```{r , echo = FALSE }
+
+etappe10 <- read.csv("data/etappe10.csv",encoding = "UTF-8")
+names(etappe10)[1] <- c("Top 3")
+etappe10Table <- flextable(etappe10) %>%
+                  width(width=c(2.5,rep(4,7)), unit = "cm") %>%
+                  vline(j = 7, border = std_border) %>%
+                  hline(i = 3, border = border2)
+
+etappe10Table
+
+```
+
+
+## Étape 9
+
+```{r , echo = FALSE }
+
+etappe9 <- read.csv("data/etappe9.csv",encoding = "UTF-8")
+names(etappe9)[1] <- c("Top 3")
+etappe9Table <- flextable(etappe9) %>%
+                  width(width=c(2.5,rep(4,7)), unit = "cm") %>%
+                  vline(j = 7, border = std_border) %>%
+                  hline(i = 3, border = border2)
+
+etappe9Table
+
+```
+
+## Étape 8
+
+```{r , echo = FALSE }
+
+etappe8 <- read.csv("data/etappe8.csv",encoding = "UTF-8")
+names(etappe8)[1] <- c("Top 3")
+etappe8Table <- flextable(etappe8) %>%
+                  width(width=c(2.5,rep(4,7)), unit = "cm") %>%
+                  vline(j = 7, border = std_border) %>%
+                  hline(i = 3, border = border2)
+
+etappe8Table
+
+```
+
+## Étape 7
+
+```{r , echo = FALSE }
+
+etappe7 <- read.csv("data/etappe7.csv",encoding = "UTF-8")
+names(etappe7)[1] <- c("Top 3")
+etappe7Table <- flextable(etappe7) %>%
+                  width(width=c(2.5,rep(4,7)), unit = "cm") %>%
+                  vline(j = 7, border = std_border) %>%
+                  hline(i = 3, border = border2)
+
+etappe7Table
+
+```
+
+## Étape 6
+
+```{r , echo = FALSE }
+
+etappe6 <- read.csv("data/etappe6.csv",encoding = "UTF-8")
+names(etappe6)[1] <- c("Top 3")
+etappe6Table <- flextable(etappe6) %>%
+                  width(width=c(2.5,rep(4,7)), unit = "cm") %>%
+                  vline(j = 7, border = std_border) %>%
+                  hline(i = 3, border = border2)
+
+etappe6Table
+
+```
+
+-->
+
+## Étape 5
+
+```{r , echo = FALSE }
+
+etappe5 <- read.csv("data/etappe5.csv",encoding = "UTF-8")
+names(etappe5)[1] <- c("Top 3")
+etappe5Table <- flextable(etappe5) %>%
+                  width(width=c(2.5,rep(4,7)), unit = "cm") %>%
+                  vline(j = 7, border = std_border) %>%
+                  hline(i = 3, border = border2)
+
+etappe5Table
+
+```
+
+## Étape 4
+
+```{r , echo = FALSE }
+
+etappe4 <- read.csv("data/etappe4.csv",encoding = "UTF-8")
+names(etappe4)[1] <- c("Top 3")
+etappe4Table <- flextable(etappe4) %>%
+                  width(width=c(2.5,rep(4,7)), unit = "cm") %>%
+                  vline(j = 7, border = std_border) %>%
+                  hline(i = 3, border = border2)
+
+etappe4Table
+
+``` 
+
+## Étape 3
+
+```{r , echo = FALSE }
+
+etappe3 <- read.csv("data/etappe3.csv",encoding = "UTF-8")
+names(etappe3)[1] <- c("Top 3")
+etappe3Table <- flextable(etappe3) %>%
+                  width(width=c(2.5,rep(4,7)), unit = "cm") %>%
+                  vline(j = 7, border = std_border) %>%
+                  hline(i = 3, border = border2)
+
+etappe3Table
+
+```
+
+## Étape 2
+
+```{r , echo = FALSE }
+
+etappe2 <- read.csv("data/etappe2.csv",encoding = "UTF-8")
+names(etappe2)[1] <- c("Top 3")
+etappe2Table <- flextable(etappe2) %>%
+                  width(width=c(2.5,rep(4,7)), unit = "cm") %>%
+                  vline(j = 7, border = std_border) %>%
+                  hline(i = 3, border = border2)
+
+etappe2Table
+
+```
+
+## Étape 1
+
+```{r , echo = FALSE }
+
+etappe1 <- read.csv("data/etappe1.csv",encoding = "UTF-8")
+names(etappe1)[1] <- c("Top 3")
+etappe1Table <- flextable(etappe1) %>%
+                  width(width=c(2.5,rep(4,7)), unit = "cm") %>%
+                  vline(j = 7, border = std_border) %>%
+                  hline(i = 3, border = border2)
+
+etappe1Table
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
