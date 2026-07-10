@@ -54,7 +54,7 @@ computeScore <- function(winner,pronos)
 ################################################################################
 ##########################  UPDATE STAGE POINTS ################################
 # Etappe 1 
-N = 5
+N = 6
 
 # gets standings
 standings <- read.csv("data/standings.csv")
