@@ -198,7 +198,7 @@ etappe10Table <- flextable(etappe10) %>%
 etappe10Table
 
 ```
-
+-->
 
 ## Étape 9
 
@@ -229,7 +229,7 @@ etappe8Table <- flextable(etappe8) %>%
 etappe8Table
 
 ```
--->
+
 ## Étape 7
 
 ```{r , echo = FALSE }
